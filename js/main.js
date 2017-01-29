@@ -25,7 +25,7 @@ $(document).ready(function() {
   //Allows the user to view more information, and then hide that information again.
   $('.view-details').click(function() {
     $(this).parent().parent().children('.details').toggle();
-    if ($(this).html()==='View details »') {
+    if ($(this).html()!=='Hide details »') {
       $(this).html('Hide details »');
     } else {
       $(this).html('View details »');
